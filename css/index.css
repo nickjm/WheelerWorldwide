@@ -1,0 +1,64 @@
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.container h1 {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.container h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 14pt;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.test {
+  display: block;
+  margin: 1rem;
+  max-width: calc(100% - 2rem);
+  background-image: url("../images/Falling in Different Directions 21 x 16.25  copy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.cell {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.cell p {
+  text-align: center;
+}
+
+.cell img {
+  object-fit: cover;
+  display: block;
+  margin: 1rem;
+  max-width: calc(100% - 2rem);
+}
+
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
